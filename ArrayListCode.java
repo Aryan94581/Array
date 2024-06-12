@@ -2,7 +2,7 @@ import java.util.ArrayList;
 public class ArrayListCode {
     public static void main(String[] args) {
         //TO declare a ArrayList
-        ArrayList<Integer> list = new ArrayList<Integer>();
+        ArrayList<Integer> list = new ArrayList<>();
         list.add(4);
         list.add(41);
         list.add(42);
