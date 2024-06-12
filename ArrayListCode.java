@@ -22,9 +22,11 @@ public class ArrayListCode {
             System.out.println(false);
         }
         // delete Item from list
-        list.remove(48);
+        list.remove(0);
         // for Print list
         System.out.println(list);
+
+        list.set(1, 3);
         if(list.contains(48)){
             System.out.println(true);
         }else{
