@@ -1,3 +1,6 @@
+
+import java.util.Arrays;
+
 public class A_2dArray {
     public static void main(String[] args) {
         int[][] arr = {
@@ -5,7 +8,7 @@ public class A_2dArray {
             {13, 15, 19, 11},
             {35, 12, 27, 1}
         };
-        System.out.println("your value is found at index of :" + search(arr, 17));
+        System.out.println("your value is found at index of :" + Arrays.toString(search(arr, 17)));
     }
     public static int[] search(int[][] array, int target){
         int x= -1;
