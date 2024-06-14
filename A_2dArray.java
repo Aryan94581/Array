@@ -8,19 +8,14 @@ public class A_2dArray {
             {13, 15, 19, 11},
             {35, 12, 27, 1}
         };
-        System.out.println("your value is found at index of :" + Arrays.toString(search(arr, 17)));
+        System.out.println("your value is found at index of :" + Arrays.toString(search(arr, 5)));
     }
     public static int[] search(int[][] array, int target){
-        int x= -1;
-        int x2 = -1; 
-        int[] newArr = {x, x2};
         if (array.length > 0) {
-            for (int i = 0; i < array.length; i++) {
-                for (int y = 0; y < array[i].length; y++) {
+            for (int i = 0; i < array.length; i++) { // iterating through rows
+                for (int y = 0; y < array[i].length; y++) { // iterating through column 
                     if(array[i][y]== target){
-                        x = i;
-                        x2 = y;
-                        return newArr;
+                       return new int[]{i, y}; // returning values to new array
                     }
                     
                 }
@@ -28,7 +23,7 @@ public class A_2dArray {
             }
 
         }
-        return newArr;
+        return new int[]{-1, -1}; // no value found
 
     }
 }
